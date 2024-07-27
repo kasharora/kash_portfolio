@@ -1,0 +1,1637 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Mango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans+Wide:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('./black-mango/__MACOSX/black-mango-font-modern-beauty-family/TTF/._BlackMango-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: Mona-Sans-BoldItalic;
+  src:url(/Mona-Sans-BoldItalic.ttf)
+}
+@font-face{
+  font-family: Mona-Sans-SemiBoldItalic;
+  src:url(/Mona-Sans-SemiBoldItalic.ttf)  
+}
+@font-face {
+  font-family: BlackMango;
+  src: url(/BlackMango-Regular.ttf);
+}
+@font-face {
+  font-family: Mona-Sans-RegularWide;
+  src: url(/Mona-Sans-RegularWide.ttf);
+}
+@font-face {
+  font-family: Mona-Sans-ExtraBoldWide;
+  src: url(/Mona-Sans-ExtraBoldWide.ttf);
+}
+@font-face {
+  font-family: Rollerscript-Smooth;;
+  src: url(/Rollerscript-Smooth.ttf);
+}
+@font-face {
+  font-family: Mona-Sans-Bold;
+  src: url(/Mona-Sans-Bold.ttf);
+}
+@font-face {
+  font-family: Mona-Sans-Regular;
+  src: url(/Mona-Sans-Regular.ttf);
+}
+@font-face {
+  font-family: Mona-Sans-SemiBold;
+  src: url(/Mona-Sans-SemiBold.ttf);
+}
+.rollerScript{
+  font-family: Rollerscript-Smooth;
+}
+
+.mona{
+  font-family: Mona-Sans-RegularWide;
+}
+
+
+.blackmango{
+  font-family: BlackMango;
+}
+body{
+  background-color: #000;
+}
+/* Home Page Css */
+
+#App {
+  text-align: center;
+  background-image: url('./backk.svg'); 
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  font-family: 'Poppins';
+  width: 100%;
+  overflow-x: hidden;
+}
+.Maindivlogo{
+  display: block;
+}
+.Mobileviewlogo{
+  display: none;
+}
+.header {
+  height: 100px;
+  background-image: url('./backk.svg'); 
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black ; /* For demo, make it semi-transparent */
+  padding-bottom: 20px;
+  z-index: -1;
+
+}
+
+
+.header-logo-content{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: right;
+  padding-top: 60px;
+}
+.mail{
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  font-size: 16px;
+  /* box-shadow: 0px 2px 10px 0px #7853F3; */
+  margin-top: 50px;
+  padding-left: 2%;
+  background-color: rgb(120, 83, 243,0.1);
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 5%;
+  color: white;
+}
+.mail img{
+  height: 20px  ;
+  width: 20px;
+  margin-right: 10px;
+}
+/* main image flip css start */
+.main_image-flip-card {
+  margin-left: 35%;
+  background-color: transparent;
+  width: 400px;
+  height: 250px;
+  margin-top: 6%;
+  
+}
+
+.main_image-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.main_image-flip-card:hover .main_image-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.main_image-flip-card-front, .main_image-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 70px;
+}
+
+.main_image-flip-card-front {
+  background-color: #bbb;
+  color: black;
+  
+}
+
+.main_image-flip-card-back {
+  background-color: #f6f6f6;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.main_image-flip-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+  border-radius: 70px;
+
+}
+
+.main_image-flip-card-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+}
+
+
+/* main image flip css end */
+
+
+
+
+.logo {
+  height: 80px;
+  /* padding-top: 20px; */
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;  
+  padding-right: 5%;
+  width:35%;
+  justify-content: right;
+ padding-top: 50px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #7853F3; /* Change this to match the color of the social media brand */
+}
+
+.text-left{
+  font-size: 25px;
+  font-family: blackmango;
+  text-align: left;
+  color: white;
+  margin-right: 10px;
+}
+
+
+.text-right {
+  font-size: 25px;
+  text-align: left;
+  font-family: blackmango;
+  color: white;
+  line-height: 25px;
+  margin-left: 15px;
+  
+}
+
+.text-right-bottom{
+  color: #7853F3;
+  font-size: 25px;
+  font-family: Rollerscript-Smooth;
+
+
+}
+
+.content {
+  position: relative;   
+  flex: 1;  
+ 
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: inset 200px 0 30px -30px black, inset -200px 0 30px -30px black;
+    -webkit-mask-image: linear-gradient(to right, transparent 5%, black 350px, black (85% - 50px), transparent 95%);
+    mask-image: linear-gradient(to right, transparent 5%, black   350px, black calc(85% - 50px), transparent 95%);
+}
+
+.moving-text {
+  /* position: absolute; */
+  white-space: nowrap;
+  margin-bottom: 30px;
+  animation: moveText 20s linear infinite;
+  font-size: 120px; 
+  color: white;
+  font-family: Mona-Sans-ExtraBoldWide;
+  font-weight: 1000;
+  
+}
+
+@keyframes moveText {
+  0% { transform: translateX(2%); }
+  100% { transform: translateX(-20%); }
+}
+
+.image-container {
+  position: relative;
+  z-index: 1;
+  margin-top: -330px;
+  display: flex;
+  flex-direction: r;
+}
+
+.content-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 70px;
+  margin-left: 10%;
+} 
+.Figma-image{ 
+  margin-bottom: 220px;
+  height: 130px;
+  width: 130px;
+  animation: moveUpDown 5s ease-in-out infinite;
+  z-index: 5;
+}
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(0); 
+  }
+}
+
+
+.third-div-text{
+  color: white;
+  font-size: 22px;
+  font-family:  blackmango;;
+  margin-top: 30px;
+  line-height: 30px;
+
+}
+.third-div-text-span{
+  font-weight: 600;
+  font-family: "Mona-Sans-RegularWide";
+}
+.Work_Together{
+  width:20%;
+  padding-left: 8px;
+  padding-right: 8px;  
+  padding-top: 15px;    
+  padding-bottom: 15px; 
+  font-size: 16px;
+  border-radius: 20px;
+  color: white;
+  border: 2px solid #A17FE9 ;
+  background-color: black;
+  margin-bottom: 7%;
+  font-family: "Mona-Sans-RegularWide";
+  font-weight: 600; 
+
+}
+.Work_Together:hover{
+  background-image: linear-gradient(to right, #A17FE9 , #8AA1FD);
+  color: white;
+}
+/* Home Page Css End */
+
+/* NavBar CSS */
+.footer {
+  display: flex;
+  width:40%;
+  justify-content: center;
+  justify-self:center;
+  border-radius: 40px;  
+  box-shadow: 0px 5px 20px 0px #7853F3;
+  margin-left: 30%; 
+  /* border: 1px grey; */
+  position: fixed;
+  top:90%;
+  font-family: 'Poppins'; 
+  z-index: 999;
+  font-family: 'Poppins';
+  text-decoration: none;
+  /* White with some transparency */
+  backdrop-filter: blur(50%); /* Blur effect */
+  color: white;
+  background-color: rgba(147,144,144,0.4);
+
+  
+
+}
+.footer-button {
+
+  font-size: 16px;
+  border: none; 
+  background-color:none;
+  width: 25%;
+  height: 40px;
+  color: white;
+
+  text-decoration: none;
+  padding-top: 10px;  
+  text-align: center;
+
+  
+
+}
+#footer-button{
+  background-color: #373737;
+  /* border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px; */
+  border-radius: 50px;  
+  border:2px solid white;
+
+}
+#footer-button img{
+  height: 30px;
+  
+
+} 
+/* #footer-button:hover{
+  border:none
+} */
+
+.footer-button:hover{
+  border:2px solid white;
+  background-color: #373737;
+  border-radius: 50px;
+  color: white; 
+  height: 40px;
+
+
+}
+#footer-button-2{
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #7853F3;
+  color: white;
+  padding-top: 10px;
+  height: 40px;
+}
+#footer-button-2:hover{
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #7853F3;
+  border-top-left-radius:0px;
+  border-bottom-left-radius:0px;
+  height: 40px;
+
+}
+#footer-button-1{
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+
+  padding-top: 10px;
+  height: 40px;
+}
+#footer-button-1:hover{ 
+  border:2px solid white;
+  background-color: #373737;
+  border-radius: 50px;
+  color: white; 
+  height: 40px;
+}
+
+#Navbar_Process{
+  margin-left: 0%;
+}
+
+/*Navbar css end */
+
+/* About Page Css Start */
+#About_main_page{
+  width: 100%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+.Bottom_navbar{
+  display: block;
+}
+
+.AboutPage{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: "BlackMango";
+  width: 100%;
+}
+.AboutPage h1{
+  font-size: 64px;
+  font-family: "BlackMango";
+  font-weight: 300;
+  margin-top: 2%;
+}
+.AboutPage h2{
+  font-size: 52px;
+  font-family: "BlackMango";
+  font-weight: 400;
+}
+.logo_about{
+ height:100%;
+  margin-top: 5%;
+  animation: rotate360 10s linear infinite;
+  width:100%;
+
+
+
+}
+@keyframes rotate360 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.About_logo{
+  height: 150px;
+  width:150px;
+
+  position: relative;
+  margin: 0 auto; /* Center the container horizontally */
+}
+.arrow{
+  position: absolute;
+    width: 50px;
+    height: 40px;
+    z-index: 1; 
+    left: 50px;
+    top:60px;
+
+}
+
+/* About Page css end */
+/* Work gallery css start */
+/* All.css */
+
+/* Body styles if needed */
+
+
+/* Container styles */
+
+/* Work gallery css start */
+#Work_gallery {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('./linnneeee.svg'), linear-gradient(black, #666666);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;  
+  line-height: 80px;
+  width: 94%;
+  border-radius: 40px;
+}
+
+.title {
+  font-size: 96px;
+  font-family: 'Mona-Sans-RegularWide';
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.subtitle {
+  font-size: 64px;
+  color: #7853F3;
+  font-family: 'blackmango';
+  padding-bottom: 4%;
+  margin-left: 10%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.gallery-container {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%; /* Adjust based on the number of images */
+  animation: scrollLeft 30s linear infinite; /* Adjust animation duration as needed */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 33%; /* Show 3 items at a time */
+  padding: 10px;
+}
+
+.carousel-item img {  
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 8px; /* Optional: Add border radius */
+ 
+}
+
+.control-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-21% * 10)); /* Adjust based on the number of images */
+  }
+}
+
+
+
+/* Work gallery css end */
+
+/* Our Project Css start */
+
+#project-App {
+
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: 'Poppins';
+}
+.project_header{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.project-top-left {
+  /* position: relative; */
+  line-height: 0px;
+}
+
+.project-our-text {
+  font-size: 48px;
+  color: #7853F3;
+  font-family: BlackMango; 
+}
+
+.project-project-text {
+  font-size: 64px;
+  font-family: BlackMango;
+}
+
+.project-top-right {
+  text-align: right;
+  line-height: 15px;
+}
+
+.project-explore-text {
+  font-size: 24px;
+}
+
+.project-explore-button {
+  margin-top: 0;
+  padding: 20px 80px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #A17FE9 , #8AA1FD);
+  color: white;
+  border: none;
+
+}
+.project-cards{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+
+  
+}
+
+
+.project-image-row {
+  width: 100%;
+  background-color: #7853F3;
+  border: #373737 2px solid;
+  border-radius: 40px;
+  
+  padding: 20px; 
+  height: 400px;
+  box-sizing: border-box; 
+}
+
+
+
+
+
+/* Our Porject CSS end */
+
+
+/* Our Services css start */
+
+#services-container {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./backk.svg'); 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  
+  padding-right: 8%;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  background-color: #000;
+  width: 90%;
+}
+
+
+.services-right {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  
+}
+
+.services-card {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fffff6;
+  box-sizing: border-box;
+  height: 300px;
+  margin-right: 30%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px 0px #7853F3;
+  line-height: 30px;
+}
+
+.services-logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 60%; 
+}
+
+.services-card-text {
+  font-size: 16px; /* Adjust as needed */
+  font-weight: 350;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+}
+.services-card-text-2{
+  font-size: 32px;
+  margin-top:10px;
+  padding: 0;
+  background: linear-gradient(to bottom, #B192E5, #7C8DF5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 70px;
+  font-weight: 500;
+  line-height: 35px;
+ 
+}
+
+
+
+/* Our Services css end */
+
+/* Contact Page css start */
+#Conatct-main-page{
+  width: 100%;
+  background-color: #000;
+  background-image: url('./backk.svg'); 
+}
+
+.contact-container {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 5%;
+  padding-bottom: 7%;
+  font-family: 'Poppins';
+  width: 100%;
+  color: white;
+
+
+}
+
+.contact-title {
+  font-size: 54px;
+  color: #7853F3;
+  line-height: 20px;
+}
+
+.contact-heading {
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+.contact-text {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.contact-button {
+  font-size: 20px;
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #A17FE9 , #8AA1FD);
+  color: white;
+  border: none;
+}
+
+
+/* Contact Page css End */
+
+/* Footer css start  */
+
+
+.footer-container {
+
+  height: 150px;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('./backk.svg'); 
+  font-family: 'Poppins';
+  border-top: 2px gray solid;
+  border-bottom: 2px gray solid;
+  margin-bottom: 7%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px 0;
+  color: white;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  width:33.3%
+}
+
+.footer-logo {  
+
+  height: 60px;
+  margin-right: 20px;
+
+}
+
+.footer-main-text {
+  font-size: 26px;
+  margin: 0;
+}
+
+.footer-sub-text {
+  font-size: 18px;
+  margin: 0;
+  color: #7853F3;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-contact {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 200;
+
+}
+
+.footer-email {
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer-underline {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 5px;
+}
+
+.footer-right {
+  text-align: right;
+  width:33.3%
+}
+
+.footer-follow {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 200;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 70%;
+
+}
+
+.footer-social-icons i {
+  font-size: 25px;
+}
+
+
+/* Footer Page css end */
+
+/* The Process Page Css start */
+
+#process-page {
+  background: linear-gradient(to right bottom, #B893EA, #768BF5);
+  text-align: center;
+
+  width:90%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 50px;  
+  margin-top: 200px;
+  font-family: 'Poppins';
+  margin-left: 5%;
+
+
+}
+
+.process-title {
+  font-size: 36px;
+  line-height: 0px;
+  color: white;
+  font-family: "BlackMango";
+  
+
+}
+
+.process-subtitle {
+  font-size: 48px;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 4%;
+  font-family: "Mona-Sans-RegularWide";
+  line-height: 30px;
+
+} 
+.process-image-title{
+  display: flex;
+  width:57%;
+  margin-left: 20%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.process-image-title-text{
+  color: white;
+  font-size: 24px;
+  font-weight: 500; 
+  line-height: 20px;  
+
+}
+.process-image-title-text-2{
+  font-size: 16px;
+  padding-bottom: 30%;
+  font-weight: 200;
+}
+.process-image-bottom-title{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;  
+  width:56%;
+  margin-left: 23%;
+  line-height: 20px;
+  margin-top: 30px;
+}
+.process-image-bottom-title-text{
+  color: white;
+  font-size: 24px;
+  font-weight: 500; 
+}
+.process-image-bottom-title-text-2{
+  font-size: 16px;
+  padding-bottom: 13%;
+  font-weight: 300;
+}
+.process-main-image-container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+.process-main-image {
+  width: 100%;
+}
+
+.process-top-images{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  height: 10%;
+  width:78%;
+  padding-left:11%;
+}
+.process-bottom-images{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute; 
+  height: 10%;  
+  width:44%;
+  padding-left:28%;
+  padding-right: 30%;
+}
+.process-top-images img,
+.process-bottom-images img{
+  height: 120px;
+  width: 120px;
+}
+
+.process-top-images {
+  top: -12%;
+}
+
+.process-bottom-images {
+  bottom: 77%;
+}
+
+.process-top-image,
+.process-bottom-image {
+  transition: transform 1s;
+}
+
+.process-top-image:hover {
+
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 2px 10px 0px white;
+  border-radius: 50%;
+}
+.process-bottom-image:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 2px 10px 0px white;
+  border-radius: 50%;
+}
+
+.process-text-overlay,
+.process-bottom-text-overlay {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.process-text-overlay {
+  top: 30%;
+  transform: translateY(-30%);
+}
+
+.process-bottom-text-overlay {
+  bottom: -30%;
+  transform: translateY(30%);
+}
+
+
+/* The Process page css end */
+
+
+/* Full contact page  css start*/
+#contactpage-container {
+  font-family: 'Poppins';
+  /* padding-top: 10%;  */
+  padding-bottom: 10%;
+
+}
+.contactpage-container ::before{
+  content: " ";
+  background-image: url('./contact_back.svg');
+  opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; 
+  z-index: -1; 
+  /* position: absolute; */
+}
+
+
+.contactpage-content {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+
+}
+.contactpageanimation-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.contactpageanimation-div2 {
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 10px;
+  left: 0;
+  transform: skewY(-3deg);
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+}
+
+
+ .contactpageanimation-div1 {
+  align-items: center;
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  height:40px;
+  top: 10px;
+  left: 0;
+  transform: skewY(-3deg);
+  overflow: hidden;
+  background-color: #9676FF;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.contactpageanimation-div2 {
+  top: 10%;
+  transform: skewY(3deg);
+}
+
+.contactpageanimation-text {
+  position: absolute;
+  white-space: nowrap;
+  animation: contactpageanimation-moveText 5s linear infinite;
+}
+
+.contactpageanimation-div1 .contactpageanimation-text {
+  top: 10%;
+}
+
+.contactpageanimation-div2 .contactpageanimation-text {
+  top: 10%;
+}
+
+@keyframes contactpageanimation-moveText {
+  from {
+    left: -5%;
+  }
+  to {
+    left: 1%;
+  }
+}
+
+
+.contactpage-right-section {
+  width: 50%;
+
+}
+.contactpage-left-section{
+  padding-left:15% ;
+  padding-right: 10%;
+  width: 25%;
+  font-family: BlackMango;
+ 
+}
+
+
+.contactpage-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.contactpage-icons:hover{
+
+}
+.contactpage-icons p{
+  text-align: left;
+
+}
+.social-icon-div{
+
+  color: #373737;
+  text-align: center;
+  padding: 10px;
+  width: 25%;
+  font-size: 12px;
+  box-shadow: 0px 2px 10px 0px #7853F3;
+  border-radius: 10px;
+}
+.social-icon-div:hover{
+transform: scale(1.1, 1.1);
+box-shadow: 0px 2px 10px 0px #7853F3;
+border-radius: 10%;
+}
+.social-icon-div p{
+  text-align: center;
+}
+
+.contactpage-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.contactpage-form-group {
+  margin-bottom: 20px;
+}
+.contactpage-form-group{
+  display: flex;
+  width: 100%;
+}
+
+.contactpage-form-group-1{
+  width:40%;
+  margin-right: 40px;
+}
+.contactpage-form-group-1 input[type="text"],
+.contactpage-form-group-1 input[type="email"],
+.contactpage-form-group-1 input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+ background-color: #f6f6f6;
+
+ 
+}
+.contactpage-form-group input[type="url"]{
+  width: 89%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  justify-content: space-between;
+  
+}
+
+.contactpage-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactpage-checkbox-group label {
+  margin-bottom: 10px;
+}
+
+.contactpage-submit-btn {
+  padding: 10px 20px;
+  background-color: #7853F3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 89%;
+  margin-top: 10px;
+}
+
+
+
+
+/* full contact page css end */
+
+
+/* Project 1 Page css start */
+#Project2_Page{
+  font-size: 50px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/* project 1 page css start */
+#Project1_Page{
+  font-size: 50px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.Project1First_page{
+  width: 100%;
+  height: 470px;
+}
+.Project1First_page img{
+  height: 100%;
+  width: 100%;
+}
+
+.project1-container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.project1-left, .project1-right {
+  flex: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  line-height: 10px;
+}
+.project1-right{
+  line-height: 20px;
+}
+
+
+.project1-left-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.project1-left-text {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.project1-button-row {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.project1-button-1 {
+  background-color: #9676FF;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.project1-button-2 {
+  background-color: #F46515;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.project1-button-3 {
+  background-color: black;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.project1-right-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project1-right-text {
+  font-size: 16px;
+}
+
+.project1-right-button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+/* Project1_2nd div css start */
+.project1-main-div {
+  padding-left: 10%;  
+  padding-right: 10%;
+  margin-top: 10%;
+}
+
+.project1-first-div {
+  width: 100%;
+  line-height: 20px;
+}
+
+.project1-title-first-div {
+  text-align: left;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.project1-text-first-div  {
+  font-size: 28px;
+  text-align: left;
+}
+
+.project1-main-image {
+  height: 600px;
+  width: 100%;
+  
+}
+
+.project1-row-divs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.project1-row-div-title{
+  text-align: left;
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 100px;
+
+}
+.project1-row-div-content{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+.project1-row-div-additional-text{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  color: #AB3088;
+  margin-top: 100px;
+}
+
+
+
+.project1-row-div1 {
+  width: 30%;
+  border-radius: 20px;
+  background-color: #3F3F3F;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+
+}
+.project1-row-div2{
+  width: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: black;
+  
+}
+
+.project1-row-div-image {
+  position: relative;
+  width: 40%;
+}
+
+.project1-row-div-text {
+  margin-top: 10px;
+  font-size:  18px;
+  
+}
+
+
+
+
+
+
+/* Project1_2nddiv css end */
+
+/* Project1_3rddiv css start */
+
+.project1-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.project1_main_title{
+  text-align: left;
+  font-size: 54px;
+  margin-bottom: 50px;
+  color: #AB3088;
+}
+
+.project1-title {
+  display: flex;
+  align-items: center;
+  font-size: 64px;
+  margin-bottom: 100px;
+  color: #AB3088;
+}
+
+.project1-subtitle {
+  margin-left: 10px;
+  font-size: 24px;
+  color: #000;
+}
+
+.project1-gap {
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+}
+
+.project1-text {
+  width: 40%;
+  font-size: 20px;
+  margin-right: 10%;
+  text-align: center;
+  height: 400px;
+  padding-top: 20%;
+
+  
+}
+
+.project_blank_div {
+  background-color: #D9D9D9;
+  height: 400px;
+  margin-bottom: 70px;
+  width: 50%;
+}
+
+.project1-descriptionText {
+  font-size: 20px;
+  margin-left: 10%;
+  width: 40%;
+}
+
+/* Project1_3rddiv css end */
+
+/* Project1_div4 css start */
+.project1_div3-container {
+  background: #AB3088;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 40px;
+  padding: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  
+  color: #FFFFFF;
+}
+
+.project1_div3-title {
+  display: flex;
+  align-items: center;
+}
+
+.project1_div3-number {
+  font-size: 74px;
+  margin-right: 10px;
+  color: #FFFFFF;
+}
+
+.project1_div3-mainText {
+  font-size: 28px;
+  text-align: left;
+}
+.project1_div3-mainsubtext{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.project1_div3-subText {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.project1_div3-images {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.project1_div3-imageContainer {
+  position: relative;
+  margin-right: 20px;
+}
+
+.project1_div3-image {
+  display: block;
+}
+
+.project1_div3-image1 {
+  height: 300px;
+}
+
+.project1_div3-image2,
+.project1_div3-image3 {
+  height: 250px;
+}
+
+.project1_div3-image4 {
+  height: 280px;
+}
+
+.project1_div3-arrow {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.project1_div3-imageText {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+/* Project1_div css end */
+
