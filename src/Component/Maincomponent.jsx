@@ -15,8 +15,8 @@ const Maincomponent = () => {
   return (
     <>
       <HomePage />
-      {/* <About />
-      <Workgallery />
+        <About />
+     { /*<Workgallery />
      <Ourprojects /> */}
      <Ourservices />
       {/* <Process/> */}

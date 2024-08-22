@@ -464,11 +464,13 @@ body{
   font-family: "BlackMango";
   font-weight: 300;
   margin-top: 2%;
+  color: white;
 }
 .AboutPage h2{
   font-size: 52px;
   font-family: "BlackMango";
   font-weight: 400;
+  color: white;
 }
 .logo_about{
  height:100%;
